@@ -1,0 +1,33 @@
+{
+    "default_rotation_interval_seconds": 60,
+    "auto_rotate_enabled": true,
+    "connection_timeout_seconds": 15,
+    "verification_timeout_seconds": 10,
+    "verification_urls": [
+        "https://api.ipify.org?format=json",
+        "https://ifconfig.me/all.json",
+        "https://icanhazip.com"
+    ],
+    "max_retries": 3,
+    "retry_backoff_factor": 1.5,
+    "max_history_size": 1000,
+    "check_ipv6": false,
+    "ipv6_verification_url": "https://api6.ipify.org",
+    "default_connection_method": null,
+    "preferred_profile_id": null,
+    "kill_switch_enabled": false,
+    "dns_leak_protection": true,
+    "direct_fallback_allowed": false,
+    "trusted_direct_ips": [],
+    "blocked_regions": [],
+    "log_level": "INFO",
+    "log_directory": "logs",
+    "max_log_size_bytes": 10485760,
+    "log_retention_days": 7,
+    "log_backup_count": 5,
+    "use_system_keyring": true,
+    "theme": "dark",
+    "start_minimized": false,
+    "minimize_to_tray": true,
+    "show_notifications": true
+}

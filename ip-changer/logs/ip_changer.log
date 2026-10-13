@@ -1,0 +1,100 @@
+2026-10-12 22:36:44 [INFO] [root] Logging initialized at level INFO. Log target: C:\Users\new\.gemini\antigravity\scratch\ip-changer\logs\ip_changer.log
+2026-10-12 22:36:44 [INFO] [src.app] Initializing IP Changer Desktop Application...
+2026-10-12 22:36:44 [INFO] [src.services.secret_store] SecretStore using OS Keyring (Windows WinVaultKeyring)
+2026-10-12 22:36:44 [INFO] [src.core.connection_manager] Registered adapter ProxyAdapter for connection type http_proxy
+2026-10-12 22:36:44 [INFO] [src.core.connection_manager] Registered adapter ProxyAdapter for connection type https_proxy
+2026-10-12 22:36:44 [INFO] [src.core.connection_manager] Registered adapter ProxyAdapter for connection type socks5_proxy
+2026-10-12 22:36:44 [INFO] [src.core.connection_manager] Registered adapter ProxyAdapter for connection type rotation_gateway
+2026-10-12 22:36:44 [INFO] [src.core.connection_manager] Registered adapter SystemProxyAdapter for connection type vpn_system
+2026-10-12 22:36:44 [INFO] [src.app] Platform adapters registered successfully
+2026-10-12 22:36:44 [INFO] [src.ui.main_window] Executing clean application shutdown...
+2026-10-12 22:41:55 [INFO] [root] Logging initialized at level INFO. Log target: C:\Users\new\.gemini\antigravity\scratch\ip-changer\logs\ip_changer.log
+2026-10-12 22:41:55 [INFO] [src.app] Initializing IP Changer Desktop Application...
+2026-10-12 22:41:55 [INFO] [src.services.secret_store] SecretStore using OS Keyring (Windows WinVaultKeyring)
+2026-10-12 22:41:55 [INFO] [src.core.connection_manager] Registered adapter ProxyAdapter for connection type http_proxy
+2026-10-12 22:41:55 [INFO] [src.core.connection_manager] Registered adapter ProxyAdapter for connection type https_proxy
+2026-10-12 22:41:55 [INFO] [src.core.connection_manager] Registered adapter ProxyAdapter for connection type socks5_proxy
+2026-10-12 22:41:55 [INFO] [src.core.connection_manager] Registered adapter ProxyAdapter for connection type rotation_gateway
+2026-10-12 22:41:55 [INFO] [src.core.connection_manager] Registered adapter SystemProxyAdapter for connection type vpn_system
+2026-10-12 22:41:55 [INFO] [src.app] Platform adapters registered successfully
+2026-10-12 22:42:37 [INFO] [root] Logging initialized at level INFO. Log target: C:\Users\new\.gemini\antigravity\scratch\ip-changer\logs\ip_changer.log
+2026-10-12 22:42:37 [INFO] [src.app] Initializing IP Changer Desktop Application...
+2026-10-12 22:42:37 [INFO] [src.services.secret_store] SecretStore using OS Keyring (Windows WinVaultKeyring)
+2026-10-12 22:42:37 [INFO] [src.core.connection_manager] Registered adapter ProxyAdapter for connection type http_proxy
+2026-10-12 22:42:37 [INFO] [src.core.connection_manager] Registered adapter ProxyAdapter for connection type https_proxy
+2026-10-12 22:42:37 [INFO] [src.core.connection_manager] Registered adapter ProxyAdapter for connection type socks5_proxy
+2026-10-12 22:42:37 [INFO] [src.core.connection_manager] Registered adapter ProxyAdapter for connection type rotation_gateway
+2026-10-12 22:42:37 [INFO] [src.core.connection_manager] Registered adapter SystemProxyAdapter for connection type vpn_system
+2026-10-12 22:42:37 [INFO] [src.app] Platform adapters registered successfully
+2026-10-12 23:07:01 [INFO] [root] Logging initialized at level INFO. Log target: C:\Users\new\.gemini\antigravity\scratch\ip-changer\logs\ip_changer.log
+2026-10-12 23:07:01 [INFO] [src.app] Initializing IP Changer Desktop Application...
+2026-10-12 23:07:01 [INFO] [src.services.secret_store] SecretStore using OS Keyring (Windows WinVaultKeyring)
+2026-10-12 23:07:01 [INFO] [src.core.connection_manager] Registered adapter ProxyAdapter for connection type http_proxy
+2026-10-12 23:07:01 [INFO] [src.core.connection_manager] Registered adapter ProxyAdapter for connection type https_proxy
+2026-10-12 23:07:01 [INFO] [src.core.connection_manager] Registered adapter ProxyAdapter for connection type socks5_proxy
+2026-10-12 23:07:01 [INFO] [src.core.connection_manager] Registered adapter ProxyAdapter for connection type rotation_gateway
+2026-10-12 23:07:01 [INFO] [src.core.connection_manager] Registered adapter SystemProxyAdapter for connection type vpn_system
+2026-10-12 23:07:01 [INFO] [src.app] Platform adapters registered successfully
+2026-10-12 23:08:26 [INFO] [src.services.configuration_service] Application settings updated successfully.
+2026-10-12 23:08:46 [INFO] [src.services.diagnostics_service] Executing full diagnostic suite...
+2026-10-12 23:08:52 [INFO] [src.services.diagnostics_service] Diagnostic suite finished. Total checks: 10
+2026-10-12 23:09:01 [INFO] [src.core.rotation_controller] Starting rotation loop with interval=60s
+2026-10-12 23:09:01 [INFO] [src.core.rotation_controller] RotationController worker thread launched
+2026-10-12 23:09:01 [INFO] [src.core.rotation_controller] Rotation state transition: idle -> validating
+2026-10-12 23:09:23 [ERROR] [src.ui.workers] Manual rotation failed: 'str' object has no attribute 'value'
+Traceback (most recent call last):
+  File "C:\Users\new\.gemini\antigravity\scratch\ip-changer\src\ui\workers.py", line 147, in run
+    event = self._controller.rotate_once(
+        scope=self._scope,
+        profiles=self._profiles,
+        manual_profile_id=self._manual_profile_id,
+    )
+  File "C:\Users\new\.gemini\antigravity\scratch\ip-changer\src\core\rotation_controller.py", line 444, in rotate_once
+    event = self._perform_rotation()
+  File "C:\Users\new\.gemini\antigravity\scratch\ip-changer\src\core\rotation_controller.py", line 180, in _perform_rotation
+    selection = self._selector.select(
+        profiles=self._loop_profiles,
+    ...<2 lines>...
+        manual_override_id=self._manual_profile_id,
+    )
+  File "C:\Users\new\.gemini\antigravity\scratch\ip-changer\src\core\method_selector.py", line 167, in select
+    f"Selected '{chosen.name}' ({chosen.connection_type.value}) as highest-priority "
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'value'
+2026-10-12 23:10:26 [INFO] [src.ui.main_window] Executing clean application shutdown...
+2026-10-12 23:20:30 [INFO] [root] Logging initialized at level INFO. Log target: C:\Users\new\.gemini\antigravity\scratch\ip-changer\logs\ip_changer.log
+2026-10-12 23:20:30 [INFO] [src.app] Initializing IP Changer Desktop Application...
+2026-10-12 23:20:31 [INFO] [src.services.secret_store] SecretStore using OS Keyring (Windows WinVaultKeyring)
+2026-10-12 23:20:31 [INFO] [src.core.connection_manager] Registered adapter ProxyAdapter for connection type http_proxy
+2026-10-12 23:20:31 [INFO] [src.core.connection_manager] Registered adapter ProxyAdapter for connection type https_proxy
+2026-10-12 23:20:31 [INFO] [src.core.connection_manager] Registered adapter ProxyAdapter for connection type socks5_proxy
+2026-10-12 23:20:31 [INFO] [src.core.connection_manager] Registered adapter ProxyAdapter for connection type rotation_gateway
+2026-10-12 23:20:31 [INFO] [src.core.connection_manager] Registered adapter SystemProxyAdapter for connection type vpn_system
+2026-10-12 23:20:31 [INFO] [src.app] Platform adapters registered successfully
+2026-10-12 23:20:31 [INFO] [src.services.configuration_service] Application settings updated successfully.
+2026-10-12 23:20:44 [ERROR] [src.services.configuration_service] Failed atomic JSON write to C:\Users\new\.gemini\antigravity\scratch\ip-changer\config\settings.json: Object of type ThemeMode is not JSON serializable
+2026-10-12 23:20:48 [ERROR] [src.services.configuration_service] Failed atomic JSON write to C:\Users\new\.gemini\antigravity\scratch\ip-changer\config\settings.json: Object of type ThemeMode is not JSON serializable
+2026-10-12 23:20:56 [INFO] [src.ui.main_window] Executing clean application shutdown...
+2026-10-13 08:13:10 [INFO] [root] Logging initialized at level INFO. Log target: C:\Users\new\.gemini\antigravity\scratch\ip-changer\logs\ip_changer.log
+2026-10-13 08:13:10 [INFO] [src.app] Initializing IP Changer Desktop Application...
+2026-10-13 08:13:11 [INFO] [src.services.secret_store] SecretStore using OS Keyring (Windows WinVaultKeyring)
+2026-10-13 08:13:11 [INFO] [src.core.connection_manager] Registered adapter ProxyAdapter for connection type http_proxy
+2026-10-13 08:13:11 [INFO] [src.core.connection_manager] Registered adapter ProxyAdapter for connection type https_proxy
+2026-10-13 08:13:11 [INFO] [src.core.connection_manager] Registered adapter ProxyAdapter for connection type socks5_proxy
+2026-10-13 08:13:11 [INFO] [src.core.connection_manager] Registered adapter ProxyAdapter for connection type rotation_gateway
+2026-10-13 08:13:11 [INFO] [src.core.connection_manager] Registered adapter SystemProxyAdapter for connection type vpn_system
+2026-10-13 08:13:11 [INFO] [src.app] Platform adapters registered successfully
+2026-10-13 08:13:11 [INFO] [src.services.configuration_service] Application settings updated successfully.
+2026-10-13 08:15:21 [INFO] [src.ui.main_window] Executing clean application shutdown...
+2026-10-13 08:17:00 [INFO] [root] Logging initialized at level INFO. Log target: C:\Users\new\.gemini\antigravity\scratch\ip-changer\logs\ip_changer.log
+2026-10-13 08:17:00 [INFO] [src.app] Initializing IP Changer Desktop Application...
+2026-10-13 08:17:01 [INFO] [src.services.secret_store] SecretStore using OS Keyring (Windows WinVaultKeyring)
+2026-10-13 08:17:01 [INFO] [src.core.connection_manager] Registered adapter ProxyAdapter for connection type http_proxy
+2026-10-13 08:17:01 [INFO] [src.core.connection_manager] Registered adapter ProxyAdapter for connection type https_proxy
+2026-10-13 08:17:01 [INFO] [src.core.connection_manager] Registered adapter ProxyAdapter for connection type socks5_proxy
+2026-10-13 08:17:01 [INFO] [src.core.connection_manager] Registered adapter ProxyAdapter for connection type rotation_gateway
+2026-10-13 08:17:01 [INFO] [src.core.connection_manager] Registered adapter SystemProxyAdapter for connection type vpn_system
+2026-10-13 08:17:01 [INFO] [src.app] Platform adapters registered successfully
+2026-10-13 08:17:01 [INFO] [src.services.configuration_service] Application settings updated successfully.
+2026-10-13 08:18:42 [INFO] [src.services.configuration_service] Application settings updated successfully.
+2026-10-13 08:22:00 [INFO] [src.ui.main_window] Executing clean application shutdown...

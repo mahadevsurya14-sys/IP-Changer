@@ -1,0 +1,26 @@
+{
+    "_metadata": {
+        "description": "Example application settings for IP Changer",
+        "author": "Mahaduuu",
+        "documentation": "Values in this file serve as defaults. Passwords and credentials must never be placed in configuration files."
+    },
+    "default_rotation_interval": 30,
+    "default_connection_method": "http_proxy",
+    "auto_mode": true,
+    "preferred_profile_id": null,
+    "verification_services": [
+        "https://api.ipify.org",
+        "https://ifconfig.me/ip",
+        "https://icanhazip.com"
+    ],
+    "connection_timeout": 15,
+    "max_retries": 3,
+    "retry_backoff_factor": 1.5,
+    "kill_switch_enabled": false,
+    "theme": "dark",
+    "log_retention_days": 30,
+    "max_history_size": 1000,
+    "start_minimized": false,
+    "check_ipv6": false,
+    "ipv6_verification_service": "https://api6.ipify.org"
+}
